@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Sorpresa de Cumpleaños!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 50px;
+        }
+        #mensaje {
+            display: none;
+            font-size: 2em;
+            color: #ff69b4;
+            margin-top: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Toca el botón para ver la sorpresa!</h1>
+    <button onclick="mostrarMensaje()">Tocar aquí</button>
+    <div id="mensaje">¡Feliz Cumpleaños! 🎉🎂</div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
